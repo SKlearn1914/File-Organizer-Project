@@ -64,23 +64,6 @@ function loadCategories() {
         });
 }
 window.onload = loadCategories;
-function renderCategories() {
-    let box = document.getElementById("categoryList");
-    box.innerHTML = "";
-
-    for (let key in categories) {
-        let div = document.createElement("div");
-        div.style.marginBottom = "5px";
-
-        div.innerHTML = `
-            <b>${key}</b>: ${categories[key].join(", ")}
-            <button onclick="removeCategory('${key}')">❌</button>
-        `;
-
-        box.appendChild(div);
-    }
-}
-
 function setFolder() {
     let path = document.getElementById("folderPath").value;
 
@@ -152,4 +135,3 @@ function exportCSV() {
     window.location.href = '/export';
 }
 // Load default categories visually (optional)
-renderCategories();
