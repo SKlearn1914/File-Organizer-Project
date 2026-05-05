@@ -1,4 +1,5 @@
-pip install flask
-pip install numpy
-pip install tkinter
-pip install messagebox
+flask
+numpy
+tkinter
+messagebox
+shutil
