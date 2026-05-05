@@ -1,1 +1,4 @@
-Flask==2.2.5
+pip install flask
+pip install numpy
+pip install tkinter
+pip install messagebox
